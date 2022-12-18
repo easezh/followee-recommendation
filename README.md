@@ -1,6 +1,6 @@
 ![INFORMS_Journal_on_Computing_Header](https://user-images.githubusercontent.com/44605491/208304431-b02fb847-3ca7-4dd5-9f27-06535ec90737.jpeg)
 
-# Preference-Engagement Latent Dirichlet Allocation (PE-LDA) Model: An Interpretable Followee Recommendation Method
+# Integrating Users’ Contextual Engagements with Their General Preferences: An Interpretable Followee Recommendation Method
 
 ## Citation
 If you use the code in this repository, please cite the paper "Ran Y, Liu J, Zhang Y (2022) Integrating users’ contextual engagements with their general preferences: An interpretable followee recommendation method. INFORMS Journal on Computing, accepted." Below is the BibTex for citing this version of the matirial. 
