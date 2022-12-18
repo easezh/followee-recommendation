@@ -1,7 +1,17 @@
 # Preference-Engagement Latent Dirichlet Allocation (PE-LDA) Model: An Interpretable Followee Recommendation Method
 
 ## Citation
-If you use the code in this repository, please cite the paper "Ran Y, Liu J, Zhang Y (2022) Integrating users’ contextual engagements with their general preferences: An interpretable followee recommendation method. INFORMS Journal on Computing, accepted." 
+If you use the code in this repository, please cite the paper "Ran Y, Liu J, Zhang Y (2022) Integrating users’ contextual engagements with their general preferences: An interpretable followee recommendation method. INFORMS Journal on Computing, accepted." Below is the BibTex for citing this version of the matirial. 
+```
+@article{PELDA2022,
+    author    = {Yaxuan Ran, Jiani Liu, and Yishi Zhang},
+    publisher   = {INFORMS Journal on Computing}
+    title     = {Integrating Users’ Contextual Engagements with Their General Preferences: An Interpretable Followee Recommendation Method},
+    year      = {2022},
+    doi       = {10.5281/zenodo.7454449},
+    url       = {https://github.com/easezh/followee-recommendation}   
+}
+```
 
 ## Data and instructions to run PE-LDA model
 The original version of the dataset used in our study is an open dataset. You can find and download the raw dataset at https://www.kaggle.com/datasets/hwassner/TwitterFriends/download?datasetVersionNumber=2 (login may be required). Detailed information on this dataset is also available at https://www.kaggle.com/datasets/hwassner/TwitterFriends. A data backup is also available at https://drive.google.com/file/d/13BLIS_eQTdz6XsHkERQYDAI3vWtDMM-p. 
