@@ -1,3 +1,5 @@
+![INFORMS_Journal_on_Computing_Header](https://user-images.githubusercontent.com/44605491/208304431-b02fb847-3ca7-4dd5-9f27-06535ec90737.jpeg)
+
 # Preference-Engagement Latent Dirichlet Allocation (PE-LDA) Model: An Interpretable Followee Recommendation Method
 
 ## Citation
