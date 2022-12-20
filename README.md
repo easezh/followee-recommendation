@@ -22,7 +22,7 @@ Users’ contextual engagements can affect their decisions about who to follow o
 ## Data and instructions to run PE-LDA
 The original version of the dataset used in our study is an open dataset. You can find and download the raw dataset at https://www.kaggle.com/datasets/hwassner/TwitterFriends/download?datasetVersionNumber=2 (login may be required). Detailed information on this dataset is also available at https://www.kaggle.com/datasets/hwassner/TwitterFriends. A data backup is also available at https://drive.google.com/file/d/13BLIS_eQTdz6XsHkERQYDAI3vWtDMM-p. 
 
-Since both the original and pre-processed datasets exceed the maximum capacity of the platform (25MB), we provide interactive python notebook (.ipynb) files containing the pre-processing procedure and PE-LDA code to get the pre-processed datasets and the results used in our study. Please be aware that if you want to run the PE-LDA model, you must first download this dataset and pre-process it with `data_preprocessing.ipynb` in the src folder. 
+Since both the original and pre-processed datasets exceed the maximum capacity of the platform (25MB), we provide interactive python notebook (.ipynb) files containing the pre-processing procedure and PE-LDA code to get the pre-processed datasets and the results used in our study. Please be aware that if you want to run the PE-LDA model, you must first download this dataset and pre-process it with `data_preprocessing.ipynb` in `src` folder. 
 
 The code `PELDA.ipynb` implements PE-LDA model. In this implementation, we first define four sampling functions to draw samples from Beta, Binomial, Dirichlet, and Multinomial distributions. Then, we train Gibbs sampler to estimate latent variables. Detailed derivations are given in `appendix.pdf`. In our paper, PE-LDA was implemented in C in our experiments. It is available based on reasonable request.  
 
@@ -40,7 +40,7 @@ Specifically, we conduct a five-fold cross validation by dividing the dataset in
 - tqdm 4.50.0
 
 ## Appendix
-The file `appendix.pdf' is the online supplementary material for the paper "Integrating Users’ Contextual Engagements with Their General Preferences: An Interpretable Followee Recommendation Method". It includes: 
+The file `appendix.pdf` is the online supplementary material for the paper "Integrating Users’ Contextual Engagements with Their General Preferences: An Interpretable Followee Recommendation Method". It includes: 
 - The Preliminary Study in the Theoretical Foundation Section
 - Literature Summary on LDA-based Followee Recommendation
 - Derivation of Equations (2)--(3), i.e., the update equation from which the Gibbs sampler draws the hidden variable in our PE-LDA model
