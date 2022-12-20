@@ -3,12 +3,12 @@
 # Integrating Users’ Contextual Engagements with Their General Preferences: An Interpretable Followee Recommendation Method
 
 ## Citation
-If you use the code in this repository, please cite the paper "Ran Y, Liu J, Zhang Y (2022) Integrating users’ contextual engagements with their general preferences: An interpretable followee recommendation method. INFORMS Journal on Computing, accepted." Below is the BibTex for citing this version of the matirial. 
+If you use the code in this repository, please cite the paper "Ran Y, Liu J, Zhang Y (2022) Integrating users’ contextual engagements with their general preferences: An interpretable followee recommendation method. INFORMS Journal on Computing, accepted." Below is the BibTex for citing this version of the material. 
 ```
 @article{PELDA2022,
-    author    = {Yaxuan Ran, Jiani Liu, and Yishi Zhang},
+    author    = {Yaxuan Ran and Jiani Liu and Yishi Zhang},
     publisher   = {INFORMS Journal on Computing}
-    title     = {Integrating Users’ Contextual Engagements with Their General Preferences: An Interpretable Followee Recommendation Method},
+    title     = {Integrating Users’ Contextual Engagements with Their General Preferences: {A}n Interpretable Followee Recommendation Method},
     year      = {2022},
     doi       = {10.5281/zenodo.7460938},
     url       = {https://github.com/easezh/followee-recommendation}   
@@ -19,14 +19,14 @@ If you use the code in this repository, please cite the paper "Ran Y, Liu J, Zha
 ## Abstract
 Users’ contextual engagements can affect their decisions about who to follow on online social networks because engaged (vs. disengaged) users tend to seek more information about the interested topic and are more likely to follow relevant accounts successively. However, existing followee recommendation methods neglect to consider contextual engagement by only relying on users’ general preferences. In the light of the chronological characteristic of the user’s following behavior, we draw on the engagement theory and propose an interpretable algorithm, namely Preference-Engagement Latent Dirichlet Allocation (PE-LDA), which integrates users’ contextual engagements with their general preferences for followee recommendation. Specifically, we suggest that if a user is engaged in the current interest, he/she will be more likely to select a followee relevant to that interest. If not, the user tends to select a followee according to his/her general preference. To implement this framework, we extend the original LDA by (1) introducing an indicator to represent whether the user is engaged in the current interest or not, and (2) allowing a potential dependency between a user’s successive interests to describe the condition of contextual engagement. We conduct extensive experiments using a real-world Twitter dataset. Results demonstrate the superior performance of PE-LDA compared with several existing methods.
 
-## Data and instructions to run PE-LDA model
+## Data and instructions to run PE-LDA
 The original version of the dataset used in our study is an open dataset. You can find and download the raw dataset at https://www.kaggle.com/datasets/hwassner/TwitterFriends/download?datasetVersionNumber=2 (login may be required). Detailed information on this dataset is also available at https://www.kaggle.com/datasets/hwassner/TwitterFriends. A data backup is also available at https://drive.google.com/file/d/13BLIS_eQTdz6XsHkERQYDAI3vWtDMM-p. 
 
-Since both the original and pre-processed datasets exceed the maximum capacity of the platform (25MB), we provide interactive python notebook (.ipynb) files containing the pre-processing procedure and PE-LDA code to get the pre-processed datasets and the results used in our study. Please be aware that if you want to run the PE-LDA model, you must first download this dataset and pre-process it with `data_preprocessing.ipynb` in the src folder. 
+Since both the original and pre-processed datasets exceed the maximum capacity of the platform (25MB), we provide interactive python notebook (.ipynb) files containing the pre-processing procedure and PE-LDA code to get the pre-processed datasets and the results used in our study. Please be aware that if you want to run the PE-LDA model, you must first download this dataset and pre-process it with `data_preprocessing.ipynb' in the src folder. 
 
-The code `PELDA.ipynb` implements PE-LDA model. In this implementation, we first define four sampling functions to draw samples from Beta, Binomial, Dirichlet, and Multinomial distributions. Then, we train Gibbs sampler to estimate latent variables. Detailed derivations are given in `appendix.pdf`. In our paper, PE-LDA was implemented in C in our experiments. It is available based o reasonable request.  
+The code `PELDA.ipynb' implements PE-LDA model. In this implementation, we first define four sampling functions to draw samples from Beta, Binomial, Dirichlet, and Multinomial distributions. Then, we train Gibbs sampler to estimate latent variables. Detailed derivations are given in `appendix.pdf'. In our paper, PE-LDA was implemented in C in our experiments. It is available based on reasonable request.  
 
-The code `evaluation.ipynb` evaluates our PE-LDA model. Considering that using one single training split may raise random bias concerns, we use sliding window, a time-dependencies friendly cross-validation method that matches our research. We adopt a five-fold cross validation to assess how the results of a statistical analysis will generalize to an independent data set. The following figure provides an illustration of the procedure. 
+The code `evaluation.ipynb' evaluates our PE-LDA model. Considering that using one single training split may raise random bias concerns, we use sliding window, a time-dependencies friendly cross-validation method that matches our research. We adopt a five-fold cross validation to assess how the results of a statistical analysis will generalize to an independent data set. The following figure provides an illustration of the procedure. 
 
 <img width="841" alt="截屏2022-12-20 下午8 43 41" src="https://user-images.githubusercontent.com/44605491/208670279-91d910d9-dccd-4854-8a13-9e457a72754c.png">
 
@@ -40,10 +40,10 @@ Specifically, we conduct a five-fold cross validation by dividing the dataset in
 - tqdm 4.50.0
 
 ## Appendix
-The appendix.pdf is the online supplementary material for the paper "Integrating Users’ Contextual Engagements with Their General Preferences: An Interpretable Followee Recommendation Method". It includes: 
+The file `appendix.pdf' is the online supplementary material for the paper "Integrating Users’ Contextual Engagements with Their General Preferences: An Interpretable Followee Recommendation Method". It includes: 
 - The Preliminary Study in the Theoretical Foundation Section
 - Literature Summary on LDA-based Followee Recommendation
-- Derivation of Equations (2) - (3), i.e., the update equation from which the Gibbs sampler draws the hidden variable in our PE-LDA model
+- Derivation of Equations (2)--(3), i.e., the update equation from which the Gibbs sampler draws the hidden variable in our PE-LDA model
 - Summary of the Recommendation Methods Applied in Our Experiments
 - Convergence Analysis
 - Sensitivity Analysis: Impacts of $\alpha$ and $\beta$
