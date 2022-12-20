@@ -10,7 +10,7 @@ If you use the code in this repository, please cite the paper "Ran Y, Liu J, Zha
     publisher   = {INFORMS Journal on Computing}
     title     = {Integrating Users’ Contextual Engagements with Their General Preferences: An Interpretable Followee Recommendation Method},
     year      = {2022},
-    doi       = {10.5281/zenodo.7454449},
+    doi       = {10.5281/zenodo.7460938},
     url       = {https://github.com/easezh/followee-recommendation}   
 }
 ```
